@@ -101,3 +101,38 @@
     text-align: justify;
   }
 }
+
+/* Responsive adjustments for SERVICES SECTION */
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .section__pic-container {
+    height: 200px;
+    width: 200px;
+  }
+
+  .project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .btn-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 1rem;
+   
+  }
+
+  .btn-color-3 {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    width: 100%; /* Make the button full-width */
+   
+  }
+
+  #contact {
+    margin-top: 8rem; /* Adjust the margin to create space between the button and "Get in Touch" section */
+    
+  }
+}
