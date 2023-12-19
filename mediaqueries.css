@@ -102,37 +102,43 @@
   }
 }
 
-/* Responsive adjustments for SERVICES SECTION */
+/* Media Queries for Responsiveness */
 
-/* Media query for smaller screens */
-@media only screen and (max-width: 768px) {
-  .section__pic-container {
-    height: 200px;
-    width: 200px;
+@media screen and (max-width: 1400px) {
+  #services {
+    height: fit-content;
   }
 
-  .project-img {
-    width: 100%;
-    height: auto;
-    border-radius: 0;
+  .overlay {
+    bottom: -20%; /* Adjusted bottom spacing for tablets */
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #services {
+    height: fit-content;
   }
 
-  .btn-container {
-    flex-direction: column-reverse;
-    align-items: center;
-    margin-top: 1rem;
-   
+  .overlay {
+    bottom: -15%; /* Adjusted bottom spacing for small screens */
+  }
+  .btn-color-3 {
+    font-size: 0.9rem; /* Adjusted font size for smaller screens */
+    padding: 0.75rem 1.5rem; /* Adjusted padding for smaller screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #services {
+    height: fit-content;
+  }
+
+  .overlay {
+    bottom: -30%; /* Adjusted bottom spacing for extra small screens */
   }
 
   .btn-color-3 {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    width: 100%; /* Make the button full-width */
-   
-  }
-
-  #contact {
-    margin-top: 8rem; /* Adjust the margin to create space between the button and "Get in Touch" section */
-    
+    font-size: 0.8rem; /* Adjusted font size for smaller screens */
+    padding: 0.75rem 1.5rem; /* Adjusted padding for smaller screens */
   }
 }
