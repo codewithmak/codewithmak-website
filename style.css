@@ -445,19 +445,21 @@ footer p {
 .preview-container {
   position: relative;
   width: 100%;
-  display: flex;
+  display: block;
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center the items horizontally */
 }
 
 .fiverr-preview-img {
-  width: 100%;
-  max-height: 60vh; /* Set a maximum height to prevent it from taking too much space */
-  max-width: 70vw;
+  width: 100%; /* Set the width to 100% of the parent container */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  display: block;
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  
 }
+
 
 .overlay {
   position: absolute;
@@ -469,7 +471,7 @@ footer p {
   transition: opacity 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the button horizontally */
+  
 }
 
 .btn-color-3 {
